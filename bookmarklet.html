@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Regn sammen ukens timer i MinTid/WinTid</title>
+        <style>
+            body {
+                font-family: arial;
+                font-size: 13px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Regn sammen ukens timer i MinTid/WinTid</h1>
+        <p>
+            H&oslash;yreklikk p&aring; lenken under og velg <em>Legg til i favoritter</em>. Trykk s&aring; p&aring; den favoritten n&aring;r du skal regne sammen alle timene for uken n&aring;r du er i MinTid/WinTid.
+        </p>
+        <p style="font-size: 300%; text-align: center; margin-top: 60px">
+            <a href="javascript:var prosjekt=0,sum=0;$('[maxlength=5]').each(function(i,a){if(i!==0&&i%6===0){var tittel=$($('.SumMiddleColumnUke')[prosjekt++]); tittel.html(tittel.text()+'. <em>(Sum: '+sum+')</em>');sum=0}var b=parseFloat(a.value.replace(',','.'));sum+=isNaN(b)?0:b})" style="padding: 20px; border: 3px solid #333;">Regn sammen ukens timer</a>
+        </p>
+    </body>
+</html>
